@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Střední škola polytechnická Hustopeče</title>
+<style>
+  :root {
+    --zelena: #6ea431;          /* hlavní zelená podle loga školy */
+    --zelena-tmava: #578527;    /* tmavší odstín pro hover a doplňky */
+    --zelena-svetla: #eef5e4;   /* světlé pozadí pod logem */
+    --text: #1a2b3c;
+    --text-tlumeny: #5b6b7a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: transparent;    /* v iframe splyne s webem */
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+  }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  /* celá karta je jeden odkaz */
+  .karta {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 24px 28px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #e3e9dd;
+    border-left: 6px solid var(--zelena);
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    text-decoration: none;
+    color: inherit;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .karta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,.18);
+  }
+
+  .karta:focus-visible {
+    outline: 3px solid var(--zelena);
+    outline-offset: 3px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    width: 108px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--zelena-svetla);
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .obsah { flex: 1 1 auto; min-width: 0; }
+
+  .nazev {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .podtitul {
+    margin-top: 2px;
+    font-size: .85rem;
+    color: var(--text-tlumeny);
+  }
+
+  .popis {
+    margin-top: 10px;
+    font-size: .95rem;
+    line-height: 1.45;
+    color: var(--text-tlumeny);
+  }
+
+  .cta {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background: var(--zelena);
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background .15s ease;
+  }
+
+  .karta:hover .cta { background: var(--zelena-tmava); }
+
+  .cta svg { flex: 0 0 auto; }
+
+  .poznamka {
+    margin-top: 8px;
+    text-align: right;
+    font-size: .75rem;
+    color: var(--text-tlumeny);
+  }
+
+  /* užší šířky: sloupec, vše na střed */
+  @media (max-width: 640px) {
+    .karta {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+      padding: 22px 20px;
+      border-left: 1px solid #e3e9dd;
+      border-top: 6px solid var(--zelena);
+    }
+    .poznamka { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <a class="karta" href="https://hustopecess.edupage.org/" target="_blank" rel="noopener">
+    <span class="logo">
+      <img src="logo.png" alt="Logo Střední školy polytechnické Hustopeče">
+    </span>
+    <span class="obsah">
+      <span class="nazev">Střední škola polytechnická Hustopeče</span>
+      <span class="podtitul">příspěvková organizace</span>
+      <p class="popis">Aktuality ze života školy, studijní obory, rozvrhy a suplování najdete na oficiálním webu školy.</p>
+    </span>
+    <span class="cta">
+      Přejít na web školy
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+  </a>
+  <p class="poznamka">Odkaz se otevře v novém okně.</p>
+</div>
+
+</body>
+</html>
