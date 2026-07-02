@@ -92,13 +92,6 @@
     color: var(--text-tlumeny);
   }
 
-  .popis {
-    margin-top: 8px;
-    font-size: .92rem;
-    line-height: 1.4;
-    color: var(--text-tlumeny);
-  }
-
   .prava {
     flex: 0 0 auto;
     display: flex;
@@ -131,11 +124,7 @@
     white-space: nowrap;
   }
 
-  /* užší šířky (mobil): schovat popis a logo, ať se vejde do stejné výšky */
-  @media (max-width: 900px) {
-    .popis { display: none; }
-  }
-
+  /* užší šířky (mobil): schovat logo, ať se vejde do stejné výšky */
   @media (max-width: 640px) {
     .logo { display: none; }
     .karta { gap: 14px; padding: 12px 16px; }
@@ -155,7 +144,6 @@
     <span class="obsah">
       <span class="nazev">Střední škola polytechnická Hustopeče</span>
       <span class="podtitul">příspěvková organizace</span>
-      <p class="popis">Aktuality ze života školy, studijní obory, rozvrhy a suplování najdete na oficiálním webu školy.</p>
     </span>
     <span class="prava">
       <span class="cta">

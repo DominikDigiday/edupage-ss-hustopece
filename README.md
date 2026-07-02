@@ -8,7 +8,7 @@ Statický widget pro vložení do webu v QARO přes iframe modul. Odkazuje na of
 https://dominikdigiday.github.io/edupage-ss-hustopece/
 ```
 
-Widget je stavěný na iframe **1188 × 175 px** a vyplní celou výšku iframe, ať je jakákoliv. Na užších šířkách se přizpůsobí: pod 900 px skryje popisný text, pod 640 px skryje i logo, takže výška 175 px stačí i na mobilu.
+Widget je stavěný na iframe **1188 × 175 px** a vyplní celou výšku iframe, ať je jakákoliv. Na šířkách pod 640 px skryje logo, takže výška 175 px stačí i na mobilu.
 
 ## Proč widget a ne přímý iframe na EduPage
 
