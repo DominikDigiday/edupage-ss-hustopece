@@ -22,4 +22,4 @@ EduPage posílá hlavičku `x-frame-options: sameorigin`, prohlížeč proto zob
 
 ## Úpravy
 
-Texty jsou přímo v `index.html`, barvy v proměnných v bloku `:root` (zelená vychází z loga školy).
+Texty jsou přímo v `index.html`, barvy v proměnných v bloku `:root` (hlavní barva `#00a2e8`).

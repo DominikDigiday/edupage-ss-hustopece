@@ -7,9 +7,9 @@
 <title>Střední škola polytechnická Hustopeče</title>
 <style>
   :root {
-    --zelena: #6ea431;          /* hlavní zelená podle loga školy */
-    --zelena-tmava: #578527;    /* tmavší odstín pro hover a doplňky */
-    --zelena-svetla: #eef5e4;   /* světlé pozadí pod logem */
+    --akcent: #00a2e8;          /* hlavní barva widgetu */
+    --akcent-tmavy: #0084bd;    /* tmavší odstín pro hover */
+    --akcent-svetly: #e6f6fd;   /* světlé pozadí pod logem */
     --text: #1a2b3c;
     --text-tlumeny: #5b6b7a;
   }
@@ -36,8 +36,8 @@
     padding: 24px 28px;
     border-radius: 14px;
     background: #fff;
-    border: 1px solid #e3e9dd;
-    border-left: 6px solid var(--zelena);
+    border: 1px solid #dce9f0;
+    border-left: 6px solid var(--akcent);
     box-shadow: 0 4px 14px rgba(0,0,0,.10);
     text-decoration: none;
     color: inherit;
@@ -50,7 +50,7 @@
   }
 
   .karta:focus-visible {
-    outline: 3px solid var(--zelena);
+    outline: 3px solid var(--akcent);
     outline-offset: 3px;
   }
 
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--zelena-svetla);
+    background: var(--akcent-svetly);
     border-radius: 12px;
     padding: 12px;
   }
@@ -100,7 +100,7 @@
     gap: 10px;
     padding: 13px 22px;
     border-radius: 10px;
-    background: var(--zelena);
+    background: var(--akcent);
     color: #fff;
     font-size: .95rem;
     font-weight: 600;
@@ -108,7 +108,7 @@
     transition: background .15s ease;
   }
 
-  .karta:hover .cta { background: var(--zelena-tmava); }
+  .karta:hover .cta { background: var(--akcent-tmavy); }
 
   .cta svg { flex: 0 0 auto; }
 
@@ -126,8 +126,8 @@
       text-align: center;
       gap: 16px;
       padding: 22px 20px;
-      border-left: 1px solid #e3e9dd;
-      border-top: 6px solid var(--zelena);
+      border-left: 1px solid #dce9f0;
+      border-top: 6px solid var(--akcent);
     }
     .poznamka { text-align: center; }
   }
